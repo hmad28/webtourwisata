@@ -1,0 +1,12 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, MessageCircle } from "lucide-react";
+import { notFound } from "next/navigation";
+import { destinations } from "@/data/destinations";
+import { tours } from "@/data/tours";
+import { whatsappUrl } from "@/lib/whatsapp";
+
+export function generateStaticParams() { return destinations.map(d => ({ slug: d.slug })); }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const d = destinations.find(x => x.slug === slug); return { title: d?.name ?? "Destination", description: d?.overview }; }
+export default async function DestinationDetail({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; const d = destinations.find(x => x.slug === slug); if (!d) notFound(); return <><section className="detail-hero shell"><Image src={d.image} alt={d.name} fill priority sizes="100vw" /><div className="hero-shade" /><div><span>EXPLORE LOMBOK</span><h1>{d.name}</h1><p>{d.tagline}</p></div></section><section className="section shell editorial-layout"><article><span className="eyebrow teal">ABOUT THE AREA</span><h2>A closer look at {d.name}</h2><p>{d.overview}</p><h3>Best time to visit</h3><p>Conditions vary through the year. Ask our team about weather, sea conditions, and trail access for your intended dates.</p><h3>Things to do</h3><ul className="simple-list"><li>Slow down and enjoy the landscape with a local guide.</li><li>Pair major sights with quieter community stops.</li><li>Build in enough time for weather and road conditions.</li></ul><a className="button orange" href={whatsappUrl(`Hi Lombok Journey, I would like to plan a trip to ${d.name}.`)} target="_blank"><MessageCircle /> Plan this destination</a></article><div className="editorial-image"><Image src={d.image} alt={`Travel in ${d.name}`} fill sizes="45vw" /></div></section><section className="section shell"><div className="section-heading-left"><span>KEEP EXPLORING</span><h2>Trips that fit naturally</h2></div><div className="tour-grid">{tours.slice(0,3).map(t => <Link className="mini-tour" href={`/tour-packages/${t.slug}`} key={t.slug}><Image src={t.image} alt={t.title} width={180} height={120} /><span><h3>{t.title}</h3><p>{t.duration}</p></span><ArrowRight /></Link>)}</div></section></>; }
