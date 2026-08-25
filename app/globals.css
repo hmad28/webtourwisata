@@ -131,3 +131,79 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .whatsapp-float span{display:none}
   .whatsapp-float svg{width:25px;height:25px}
 }
+
+/* Mobile-first homepage redesign */
+.home-hero-wrap{position:relative;height:640px}
+.home-hero-wrap>.home-hero{height:640px}
+.home-hero-wrap>.trip-enquiry{bottom:18px}
+.enquiry-title,.mobile-tour-title,.mobile-section-head>a{display:none}
+
+@media (max-width:760px){
+  .whatsapp-float{display:none}
+
+  .home-hero-wrap{height:790px;padding-bottom:140px}
+  .home-hero-wrap>.home-hero{height:650px;min-height:650px}
+  .home-hero-wrap>.home-hero img{object-position:63% center}
+  .home-hero-wrap>.home-hero .hero-copy{top:58px}
+  .home-hero-wrap .hero-copy h1{font-size:clamp(2.35rem,10.5vw,2.8rem);line-height:1.02}
+  .home-hero-wrap .hero-copy p{max-width:21rem;font-size:.94rem;line-height:1.55;margin-bottom:20px}
+  .home-hero-wrap .hero-actions .button{min-height:50px;border-radius:10px}
+  .home-hero-wrap .hero-actions .button.light{border:1px solid rgba(255,255,255,.72);background:rgba(5,61,70,.22);color:#fff;box-shadow:inset 0 0 0 1px rgba(5,61,70,.08)}
+
+  .home-hero-wrap>.trip-enquiry{
+    bottom:0;
+    width:calc(100% - 28px);
+    min-height:218px;
+    grid-template-columns:1fr 1fr;
+    padding:15px 12px 12px;
+    border-radius:18px;
+    box-shadow:0 18px 46px rgba(7,63,71,.18);
+  }
+  .enquiry-title{display:block;grid-column:1/-1;font-size:1rem;color:var(--teal);padding:0 9px 9px}
+  .home-hero-wrap .trip-enquiry label{min-height:54px;padding:7px 9px;border-right:0;border-bottom:1px solid var(--border)}
+  .home-hero-wrap .trip-enquiry label:nth-of-type(1){grid-column:1/-1}
+  .home-hero-wrap .trip-enquiry label:nth-of-type(2){border-right:1px solid var(--border)}
+  .home-hero-wrap .trip-enquiry label:nth-of-type(3){border-left:0}
+  .home-hero-wrap .trip-enquiry label svg{width:21px;flex:none}
+  .home-hero-wrap .trip-enquiry small{font-size:.68rem}
+  .home-hero-wrap .trip-enquiry select,.home-hero-wrap .trip-enquiry input{font-size:.76rem}
+  .home-hero-wrap .trip-enquiry button{grid-column:1/-1;min-height:50px;background:var(--orange);border-radius:10px}
+
+  .trust-strip{margin-top:0}
+  .home-experiences{width:100%;padding-left:16px;padding-right:0;padding-top:44px}
+  .mobile-section-head{display:flex;align-items:center;justify-content:space-between;padding-right:16px;margin-bottom:20px}
+  .mobile-section-head .section-title{text-align:left;margin:0;font-size:1.7rem}
+  .mobile-section-head>a{display:inline-flex;align-items:center;gap:5px;color:var(--teal-2);font-size:.82rem;font-weight:800}
+  .home-experiences .experience-grid{margin:0;padding:0 16px 10px 0;gap:12px}
+  .home-experiences .experience-card{min-width:226px;height:270px;border:0;border-radius:16px;text-align:left;box-shadow:none}
+  .home-experiences .experience-card::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(0deg,rgba(5,36,41,.84),transparent);z-index:1}
+  .home-experiences .experience-card>div:first-child{height:100%}
+  .home-experiences .experience-icon{left:16px;top:auto;bottom:15px;transform:none;width:42px;height:42px;border:0;background:var(--orange);z-index:2}
+  .home-experiences .experience-card h3{position:absolute;left:68px;right:10px;bottom:26px;margin:0;color:#fff;font-size:.92rem;z-index:2}
+
+  .home-tours{width:calc(100% - 32px);padding-top:48px;padding-bottom:50px;box-shadow:0 0 0 100vmax var(--sand);clip-path:inset(0 -100vmax)}
+  .home-tours .section-title{text-align:left;font-size:2rem;line-height:1.08;margin-bottom:24px;max-width:20rem}
+  .desktop-tour-title{display:none}
+  .mobile-tour-title{display:inline}
+  .home-tours .section-lede{display:none}
+  .home-tours .tour-grid{gap:12px}
+  .home-tours .tour-card{display:grid;grid-template-columns:42% 58%;min-height:172px;border:0;border-radius:14px;box-shadow:0 8px 24px rgba(18,63,70,.06)}
+  .home-tours .card-media{height:auto;min-height:172px}
+  .home-tours .badge{display:none}
+  .home-tours .tour-copy{min-width:0;padding:15px 13px;display:flex;flex-direction:column}
+  .home-tours .tour-copy h3{font-size:.98rem;line-height:1.22;margin-bottom:8px}
+  .home-tours .tour-meta{flex-direction:column;gap:4px;font-size:.68rem}
+  .home-tours .tour-copy>p{display:none}
+  .home-tours .tour-bottom{margin-top:auto;align-items:center;border-top:1px solid var(--border);padding-top:10px}
+  .home-tours .tour-bottom small,.home-tours .tour-bottom span{display:none}
+  .home-tours .tour-bottom strong{font-size:.92rem;color:var(--orange)}
+  .home-tours .tour-bottom .button{width:40px;min-width:40px;height:40px;min-height:40px;padding:0;font-size:0;border-radius:9px;background:var(--teal-2);box-shadow:none}
+  .home-tours .tour-bottom .button::after{content:"→";font-size:1.15rem}
+  .home-tours .center-action{margin-top:22px}
+
+  .home-destinations{width:100%;padding:42px 0 0}
+  .home-destinations .section-title{text-align:left;padding-inline:16px;margin-bottom:20px}
+  .home-destinations .destination-mosaic{margin:0;gap:2px}
+  .home-destinations .destination-tile{height:210px;border-radius:0}
+  .home-destinations .destination-tile h3{font-size:1.1rem}
+}
