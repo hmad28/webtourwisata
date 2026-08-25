@@ -17,5 +17,5 @@ export const images = {
   transfer: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=85",
   hills: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85",
   pink: "https://images.unsplash.com/photo-1476673160081-cf065607f449?auto=format&fit=crop&w=1400&q=85",
-  guide: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=85",
+  guide: "/images/local-lombok-expert.png",
 };
