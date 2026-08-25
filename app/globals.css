@@ -6,3 +6,8 @@
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 .whatsapp-float{display:none}
 @media (max-width:760px){.home-hero{height:900px}.whatsapp-float{display:flex}}
+
+/* Full-bleed homepage hero */
+.home-hero{width:100%;border-radius:0;margin-top:0}
+.home-hero .hero-copy{left:max(64px,calc((100vw - 1320px)/2 + 24px))}
+@media (max-width:760px){.home-hero{border-radius:0;margin-top:0}.home-hero .hero-copy{left:24px}}

@@ -15,7 +15,7 @@ const experiences = [
 
 export default function Home() {
   return <>
-    <section className="home-hero shell">
+    <section className="home-hero">
       <Image src={images.hero} alt="Dramatic Lombok coast and mountain landscape" fill priority sizes="100vw" />
       <div className="hero-shade" />
       <div className="hero-copy"><span className="eyebrow">LOCAL LOMBOK TOUR OPERATOR</span><h1>Discover the Real<br />Beauty of Lombok</h1><p>From hidden beaches and majestic mountains to rich culture and warm local hospitality—experience Lombok with a local point of view.</p><div className="hero-actions"><Link href="/tour-packages" className="button orange"><Waves size={18} /> Explore Tour Packages</Link><a href={whatsappUrl("Hi Lombok Journey, I would like help planning a Lombok trip.")} className="button light" target="_blank"><MessageCircle size={18} /> Plan via WhatsApp</a></div></div>
