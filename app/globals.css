@@ -139,16 +139,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 /* Mobile rules follow the project brief */
 @media (max-width:760px){
-  body{padding-bottom:76px;font-size:14px}
+  body{padding-bottom:0;font-size:14px}
   .shell{width:calc(100% - 28px)}
 
   .home-hero-wrap{width:calc(100% - 28px);height:auto;margin:10px auto 0;padding:0}
   .home-hero-wrap>.home-hero{height:550px;min-height:550px;border-radius:22px;margin:0;overflow:hidden}
   .home-hero-wrap>.home-hero img{object-position:63% center}
-  .home-hero-wrap>.home-hero .hero-copy{top:48px;left:20px;right:20px}
+  .home-hero-wrap>.home-hero .hero-copy{top:48px;bottom:20px;left:20px;right:20px;display:flex;flex-direction:column}
   .home-hero-wrap .hero-copy h1{font-size:clamp(2.35rem,10.5vw,2.75rem);line-height:1.03;margin:12px 0 16px}
-  .home-hero-wrap .hero-copy p{font-size:14px;line-height:1.55;margin-bottom:20px}
-  .home-hero-wrap .hero-actions{gap:10px}
+  .home-hero-wrap .hero-copy p{font-size:14px;line-height:1.55;margin-bottom:0}
+  .home-hero-wrap .hero-actions{gap:10px;margin-top:auto}
   .home-hero-wrap .hero-actions .button{width:100%;min-height:50px;border-radius:11px}
 
   .home-hero-wrap>.trip-enquiry{position:relative;left:auto;bottom:auto;transform:none;width:100%;min-height:0;margin:14px 0 0;grid-template-columns:1fr;padding:12px;border:1px solid var(--border);border-radius:18px;box-shadow:0 12px 34px rgba(18,63,70,.1)}
@@ -190,6 +190,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .testimonial-grid blockquote{min-width:88%;font-size:14px}
   .testimonial-grid p,.testimonial-grid footer{font-size:14px}
 
+  .final-cta{width:calc(100% - 28px);margin:0 auto 14px;padding:24px 20px 20px;border-radius:20px;gap:20px;align-items:stretch}
+  .final-cta>div{align-items:flex-start;gap:14px}
+  .final-cta>div>svg{width:40px;height:40px;padding:9px;border-radius:50%;background:rgba(53,221,119,.14);flex:none}
+  .final-cta h2{font-size:23px;line-height:1.15;margin-bottom:7px}
+  .final-cta p{font-size:14px;line-height:1.5}
+  .final-cta .button{width:100%;min-height:52px;border-radius:12px}
+
   .page-hero,.detail-hero{width:calc(100% - 28px);height:390px;min-height:390px;margin:10px auto 0;border-radius:22px}
   .page-hero-copy,.detail-hero>div:last-child{left:20px;right:20px;bottom:32px}
   .page-hero p,.detail-hero p{font-size:14px}
@@ -197,7 +204,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .footer p,.footer a,.footer small,.contact-list strong,.values-grid p{font-size:14px}
   .footer-grid{grid-template-columns:1fr;gap:28px}
 
-  .whatsapp-float{left:12px;right:12px;bottom:10px;width:auto;height:56px;padding:0 18px;border:0;border-radius:14px;display:flex;justify-content:center}
-  .whatsapp-float span{display:inline;font-size:14px}
-  .whatsapp-float svg{width:23px;height:23px}
+  .whatsapp-float{left:auto;right:16px;bottom:16px;width:58px;height:58px;padding:0;border:3px solid #fff;border-radius:50%;display:flex;justify-content:center}
+  .whatsapp-float span{display:none}
+  .whatsapp-float svg{width:25px;height:25px}
 }
