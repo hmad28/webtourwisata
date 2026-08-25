@@ -4,7 +4,7 @@
 @media (max-width:1000px){.nav-links{gap:20px}.home-hero{height:620px}.hero-copy{left:44px}.hero-copy h1{font-size:52px}.experience-grid{grid-template-columns:repeat(3,1fr)}.trust-grid{grid-template-columns:repeat(2,1fr);row-gap:22px}.trust-grid>div:nth-child(2){border-right:0}.tour-grid{gap:15px}.expert-copy{padding:50px 35px}.footer-grid{grid-template-columns:1fr 1fr}.detail-layout{gap:30px;grid-template-columns:1fr 320px}.values-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:760px){.shell,.nav-shell{width:min(100% - 28px,1320px)}.nav-shell{height:68px}.brand{font-size:19px}.desktop-plan{display:none}.menu-button{display:grid;place-items:center;background:transparent;border:0;color:var(--teal)}.nav-links{display:none;position:absolute;left:14px;right:14px;top:67px;background:#fff;padding:20px;border:1px solid var(--border);border-radius:15px;box-shadow:var(--shadow);align-items:stretch;flex-direction:column;gap:0}.nav-links.open{display:flex}.nav-links a{padding:13px}.mobile-plan{display:flex!important;background:var(--orange);color:#fff;border-radius:10px;align-items:center;justify-content:center;margin-top:8px;font-weight:800}.home-hero{height:720px;border-radius:23px;margin-top:10px}.hero-shade{background:linear-gradient(90deg,rgba(1,39,56,.84),rgba(1,39,56,.3)),linear-gradient(0deg,rgba(0,30,42,.5),transparent)}.hero-copy{left:24px;right:24px;top:54px}.hero-copy h1{font-size:43px;letter-spacing:-2px;line-height:1.04;margin-top:13px}.hero-copy p{font-size:14px}.hero-actions{flex-direction:column}.hero-actions .button{width:100%}.trip-enquiry{bottom:14px;width:calc(100% - 28px);grid-template-columns:1fr;padding:12px}.trip-enquiry label{border-right:0;border-bottom:1px solid var(--border);padding:8px 10px}.trip-enquiry button{min-height:48px;justify-content:center;margin-top:6px}.trust-grid{grid-template-columns:1fr 1fr;padding-block:20px}.trust-grid>div{justify-content:flex-start;border:0}.trust-grid svg{width:28px}.trust-grid small{display:none}.section{padding-block:40px}.section-title{font-size:27px}.experience-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 2px 10px}.experience-card{min-width:160px;scroll-snap-align:start}.experience-card>div:first-child{height:140px}.experience-icon{top:118px}.tour-grid{grid-template-columns:1fr}.card-media{height:225px}.destination-mosaic{grid-template-columns:1fr 1fr;gap:5px}.destination-tile{height:235px}.destination-tile:first-child{border-radius:15px 0 0 0}.destination-tile:last-child{border-radius:0 0 15px 0}.destination-tile h3{font-size:17px}.destination-tile p{display:none}.expert-grid{grid-template-columns:1fr}.expert-image{height:420px}.expert-copy{padding:40px 10px}.expert-copy h2{font-size:30px}.testimonial-grid{display:flex;overflow-x:auto}.testimonial-grid blockquote{min-width:88%}.final-cta{margin-bottom:14px;padding:28px 22px;flex-direction:column;align-items:stretch}.final-cta>div>svg{width:40px}.final-cta h2{font-size:22px}.footer-grid{grid-template-columns:1fr 1fr;gap:35px 20px}.footer-bottom{gap:10px;flex-direction:column}.whatsapp-float{left:14px;right:14px;bottom:12px;justify-content:center}.page-hero,.detail-hero{height:410px;border-radius:22px}.page-hero-copy,.detail-hero>div:last-child{left:25px;right:25px;bottom:35px}.page-hero h1,.detail-hero h1{font-size:40px}.section-heading-left h2{font-size:31px}.destination-grid{grid-template-columns:1fr}.destination-grid>a{grid-template-columns:120px 1fr auto;gap:13px}.destination-grid>a>div{height:120px}.detail-layout,.editorial-layout,.contact-layout{grid-template-columns:1fr;gap:35px}.detail-layout{padding-top:35px}.booking-card{position:static}.editorial-layout article h2{font-size:34px}.editorial-image,.editorial-image.portrait{height:420px}.about-story{padding-block:50px}.values-grid{grid-template-columns:1fr}.field-row{grid-template-columns:1fr}.contact-form{padding:20px}.footer{padding-bottom:65px}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-.whatsapp-float{display:none}
+.whatsapp-float{display:flex}
 @media (max-width:760px){.home-hero{height:900px}.whatsapp-float{display:flex}}
 
 /* Full-bleed homepage hero */
@@ -139,7 +139,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 /* Mobile rules follow the project brief */
 @media (max-width:760px){
-  body{padding-bottom:0;font-size:14px}
+  body{padding-bottom:0;font-size:15px}
   .shell{width:calc(100% - 28px)}
 
   .home-hero-wrap{width:calc(100% - 28px);height:auto;margin:10px auto 0;padding:0}
@@ -147,13 +147,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .home-hero-wrap>.home-hero img{object-position:63% center}
   .home-hero-wrap>.home-hero .hero-copy{top:48px;bottom:20px;left:20px;right:20px;display:flex;flex-direction:column}
   .home-hero-wrap .hero-copy h1{font-size:clamp(2.35rem,10.5vw,2.75rem);line-height:1.03;margin:12px 0 16px}
-  .home-hero-wrap .hero-copy p{font-size:14px;line-height:1.55;margin-bottom:0}
+  .home-hero-wrap .hero-copy p{font-size:15px;line-height:1.55;margin-bottom:0}
   .home-hero-wrap .hero-actions{gap:10px;margin-top:auto}
   .home-hero-wrap .hero-actions .button{width:100%;min-height:50px;border-radius:11px}
 
   .home-hero-wrap>.trip-enquiry{position:relative;left:auto;bottom:auto;transform:none;width:100%;min-height:0;margin:14px 0 0;grid-template-columns:1fr;padding:12px;border:1px solid var(--border);border-radius:18px;box-shadow:0 12px 34px rgba(18,63,70,.1)}
   .home-hero-wrap .trip-enquiry label{min-height:58px;padding:8px 10px;border-right:0;border-bottom:1px solid var(--border)}
-  .home-hero-wrap .trip-enquiry small,.home-hero-wrap .trip-enquiry select,.home-hero-wrap .trip-enquiry input{font-size:14px}
+  .home-hero-wrap .trip-enquiry small,.home-hero-wrap .trip-enquiry select,.home-hero-wrap .trip-enquiry input{font-size:15px}
   .home-hero-wrap .trip-enquiry button{min-height:50px;margin-top:6px;background:var(--teal);border-radius:11px}
 
   .trust-strip{margin-top:18px}
@@ -164,10 +164,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
   .section{padding-block:44px}
   .section-title{font-size:27px}
-  .section-lede{font-size:14px}
+  .section-lede{font-size:15px}
   .experience-grid{margin-inline:-14px;padding-inline:14px;gap:12px;scroll-padding-inline:14px}
   .experience-card{min-width:164px;border-radius:16px}
-  .experience-card h3{font-size:14px}
+  .experience-card h3{font-size:15px}
 
   .tour-grid{grid-template-columns:1fr;gap:18px}
   .tour-card{display:block;border-radius:20px}
@@ -176,7 +176,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .tour-copy{padding:18px}
   .tour-copy h3{font-size:20px}
   .tour-meta{font-size:14px;gap:12px;flex-wrap:wrap}
-  .tour-copy>p{display:block;min-height:0;font-size:14px;line-height:1.6}
+  .tour-copy>p{display:block;min-height:0;font-size:15px;line-height:1.6}
   .tour-bottom small,.tour-bottom span{font-size:14px}
   .tour-bottom strong{font-size:20px}
   .tour-bottom .button{min-height:46px;font-size:14px}
@@ -187,8 +187,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .destination-tile p{display:block;font-size:14px;line-height:1.35}
 
   .testimonial-grid{margin-inline:-14px;padding:0 14px 8px;gap:12px;scroll-padding-inline:14px}
-  .testimonial-grid blockquote{min-width:88%;font-size:14px}
-  .testimonial-grid p,.testimonial-grid footer{font-size:14px}
+  .testimonial-grid blockquote{min-width:88%;font-size:15px}
+  .testimonial-grid p,.testimonial-grid footer{font-size:15px}
 
   .final-cta{width:calc(100% - 28px);margin:0 auto 14px;padding:24px 20px 20px;border-radius:20px;gap:20px;align-items:stretch}
   .final-cta>div{align-items:flex-start;gap:14px}
@@ -199,9 +199,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
   .page-hero,.detail-hero{width:calc(100% - 28px);height:390px;min-height:390px;margin:10px auto 0;border-radius:22px}
   .page-hero-copy,.detail-hero>div:last-child{left:20px;right:20px;bottom:32px}
-  .page-hero p,.detail-hero p{font-size:14px}
+  .page-hero p,.detail-hero p{font-size:15px}
+
+  .eyebrow,.page-hero-copy span,.detail-hero>div:last-child>span,.section-heading-left span{font-size:14px}
+  .placeholder-note,.detail-facts small,.booking-card>span,.booking-card>small,.info-note p,.contact-list small,.contact-form label{font-size:14px!important}
 
   .footer p,.footer a,.footer small,.contact-list strong,.values-grid p{font-size:14px}
+  .footer h3,.footer-bottom{font-size:14px}
   .footer-grid{grid-template-columns:1fr;gap:28px}
 
   .whatsapp-float{left:auto;right:16px;bottom:16px;width:58px;height:58px;padding:0;border:3px solid #fff;border-radius:50%;display:flex;justify-content:center}
